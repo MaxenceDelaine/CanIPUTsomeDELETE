@@ -15,7 +15,7 @@ router.get('/:input', function(req, res, next) {
 //PUT qui va prendre le paramètre name
 router.put('/:input', function(req, res, next) {
   if (isNaN(req.params.input)) {
-    res.send(`The new name is ${req.params.input}`);
+    res.send(`The new name is ${req.body.user}`);
   } else {
     res.send('ERROR: wrong parameter')
   }
